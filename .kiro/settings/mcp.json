@@ -1,0 +1,60 @@
+{
+  "mcpServers": {
+    "filmcraft-headless": {
+      "command": "d:/code/filmcraft/target/release/filmcraft-cli.exe",
+      "args": [
+        "mcp",
+        "--demo"
+      ],
+      "disabled": false,
+      "autoApprove": [
+        "command_list",
+        "command_run",
+        "command_batch",
+        "doc_inspect",
+        "project_inspect",
+        "sequence_inspect",
+        "media_import",
+        "render_frame",
+        "render_preview"
+      ]
+    },
+    "web-search": {
+      "command": "uvx",
+      "args": [
+        "duckduckgo-mcp-server@latest"
+      ],
+      "disabled": false,
+      "autoApprove": [
+        "search"
+      ]
+    },
+    "filmcraft": {
+      "command": "d:/code/filmcraft/target/release/filmcraft-cli.exe",
+      "args": [
+        "mcp",
+        "--bridge",
+        "127.0.0.1:9876"
+      ],
+      "disabled": true,
+      "autoApprove": [
+        "command_list",
+        "command_run",
+        "command_batch",
+        "doc_inspect",
+        "project_inspect",
+        "sequence_inspect",
+        "media_import",
+        "render_frame",
+        "ui_inspect",
+        "ui_elements",
+        "ui_click",
+        "ui_drag",
+        "ui_key",
+        "ui_type",
+        "ui_screenshot",
+        "ui_control"
+      ]
+    }
+  }
+}
